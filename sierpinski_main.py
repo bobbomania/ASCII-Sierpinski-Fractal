@@ -80,7 +80,8 @@ def pascal_triangulator(dimension,stage,n):
 
 #main function
 def sierpinski(size):
-
+    
+    #the length of a side of the fractal is 2^size
     totalIterations = 2**size
     dimension = 3
 
@@ -97,6 +98,9 @@ def sierpinski(size):
             subRowStages += pascal_triangulator(dimension,subRow, sierpinskiRow)
 
             print(subRowStages)
+
+#test code
+sierpinski(3)
 
 #######################################################################################################################################
 
